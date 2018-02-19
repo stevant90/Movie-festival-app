@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie festival</title>
+</head>
+<body>
+    <h1>Movie festival</h1>
+    <form>
+        <p>Please fill in the form</p>
+
+        <p>Movie</p>
+
+        <fieldset>
+
+            <label>Title
+                <input type="text" name="movie-title" id="movie-title" placeholder="Title">
+            </label>
+
+            <label>Length (min)
+                <input type="number" name="movie-length" id="movie-length" placeholder="Length in min">
+            </label>
+
+            <select name="movie-genre" id="movie-genre">
+                <option value="">-</option>
+                <option value="action">Action</option>
+                <option value="thriller">Thriller</option>
+                <option value="adventure">Adventure</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+            </select>
+
+            <div class="movie-error error"></div>
+
+            <input type="button" value="Create movie" id="create-movie-btn">
+
+            <div id="movie-list"></div>
+
+        </fieldset>
+
+        <p>Program</p>
+
+        <fieldset>
+
+            <label>Date
+                <input type="date" name="program-date" id="program-date">
+            </label>
+
+            <label>Name
+                <select name="program-name" id="program-name">
+                    <option value="">-</option>
+                    <option value="action">Action</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="horror">Horror</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                </select>
+            </label>
+
+            <div class="program-error error"></div>
+            
+            <input type="button" value="Create program" id="create-program-btn">
+
+            <div id="program-list"></div>
+
+            <hr>
+
+            <label>Movie
+                <select name="movie-select" id="movie-select">
+                    <option value="">-</option>
+                </select>
+            </label>
+
+            <label>Program
+                <select name="program-select" id="program-select">
+                    <option value="">-</option>
+                </select>
+            </label>
+
+            <div class="assign-error error"></div>
+
+            <input type="button" value="Add movie to program" id="add-movie">
+
+        </fieldset>
+    </form>
+    
+    <script src="festival.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
